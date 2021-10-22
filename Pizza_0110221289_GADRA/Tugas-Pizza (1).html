@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> 
+  <title>Form Pizza</title> 
+  <style>
+    .div{
+        width: 45%;
+        padding:10px;
+        margin:auto;
+    }
+    </style> 
+ </head> 
+ <body> 
+  
+   <fieldset> 
+    <form method="POST" action="http://blackgoosebistro.com/pizza.php"> 
+     <h2> Black Goose Bistro | Pizza-on-Demand</h2> 
+     <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour. </p> 
+     
+     <!--Input Type Text--> 
+     <p>Your Information</p> 
+     <label for="name">Name:</label> 
+     <input type="text" id="name" name="customername"> 
+     <br> 
+     <label for="address">Address:</label> 
+     <textarea cols="20" rows="1" id="address" name="address"></textarea>
+     <br> 
+     <label for="telephone_number">Telephone Number:</label> 
+     <input type="number" id="telephone_number" name="telephone"> 
+     <br> 
+     <label for="email">Email:</label> 
+     <input type="email" id="email" name="email"> 
+     <br> Delivery Instructions: 
+     <br> 
+     <textarea rows="3" cols="40" maxlength="400" name="instructions"></textarea> 
+     <p></p> 
+     <b>Design Your Dream Pizza:</b>
+     <br> Pizza specs
+     <br> 
+     <p></p> 
+
+     <!--Input Type Radio--> 
+     <span>Crust (Choose one):</span>
+     <br> 
+     <input type="radio" value="Classic white" id="Classic_white" name="crust"> 
+     <label for="Classic_white">Classic white</label>
+     <br> 
+     <input type="radio" value="Multigrain" id="Multigrain" name="crust"> 
+     <label for="Multigrain">Multigrain</label>
+     <br> 
+     <input type="radio" value="Cheese-stufed crust" id="Cheese-stufed_crust" name="crust"> 
+     <label for="Cheese-stufed_crust">Cheese-stufed crust</label>
+     <br> 
+     <input type="radio" value="Gluten-free" id="Gluten-free" name="crust"> 
+     <label for="Gluten-free">Gluten-free</label>
+     <br> 
+
+     <!--Input Type Checkbox--> 
+     <span>Toppings (Choose as many as you want):</span>
+     <br> 
+     <input type="checkbox" value="Red Sauce" id="red_sauce" name="toppings" checked> 
+     <label for="red_sauce">Red Sauce</label>
+     <br> 
+     <input type="checkbox" value="Mozzarella Cheese" id="Mozzarella_Cheese" name="toppings"> 
+     <label for="Mozzarella_Cheese">Mozzarella Cheese</label>
+     <br> 
+     <input type="checkbox" value="Pepperoni" id="Pepperoni" name="toppings">
+     <label for="Pepperoni">Pepperoni</label>
+     <br> 
+     <input type="checkbox" value="Mushrooms" id="Mushrooms" name="toppings">
+     <label for="Mushrooms">Mushrooms</label>
+     <br> 
+     <input type="checkbox" value="Peppers" id="Peppers" name="toppings">
+     <label for="Peppers">Peppers</label>
+     <br> 
+     <input type="checkbox" value="Anchovies" id="Anchovies" name="toppings">
+     <label for="Anchovies">Anchovies</label>
+     <br> 
+     <p></p>
+
+     <!--Input Type Dropdown--> 
+     <span>Number</span> 
+     <label for="how_many_pizzas">How many pizzas:</label> 
+     <select id="how_many_pizzas" name="pizzas"> 
+      <option value="1">1</option> 
+      <option value="2">2</option> 
+      <option value="3">3</option> 
+      <option value="4">4</option>
+      <option value="5">5</option> 
+      <option value="6">6</option> </select> 
+     <p></p>
+
+     <!--Input Type Submit/Reset--> 
+     <a href="NPizza.php" target="blank"> </a> <input type="submit" value="Bring me pizza!">
+     <input type="reset" value="reset"> 
+    </form> 
+   </fieldset>    
+   
+ </body>
+</html>
